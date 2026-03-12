@@ -2,7 +2,7 @@ from class_funcoes import Funcoes
 from datetime import datetime
 from faker import Faker 
 import random 
-from typing import List
+from typing import List, Union
 import time
 
 # Desenvolvendo a classe pessoa. 
@@ -12,7 +12,7 @@ class Pessoa:
     """Esta classe figura objeto pessoa"""
 
 
-    def __init__(self, nome: str, data_nascimento: datetime, idade: int, cpf: str):
+    def __init__(self, nome: str, data_nascimento: Union[datetime, str], idade: int, cpf: str):
 
         # Atributos privados 
 
